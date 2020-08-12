@@ -21,7 +21,6 @@ class App < Sinatra::Base
   end 
 
   get '/:operation/:number1/:number2' do 
-
     number1 = params[:number1].to_i 
     number2 = params[:number2].to_i
 
@@ -35,7 +34,6 @@ class App < Sinatra::Base
     when 'divide'
       (number1 / number2).to_s
     end
-  
   end 
 
 end
