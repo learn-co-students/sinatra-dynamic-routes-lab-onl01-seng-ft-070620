@@ -1,14 +1,14 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'sinatra'
 gem 'rake'
-gem 'thin'
-gem 'shotgun'
 gem 'require_all'
+gem 'shotgun'
+gem 'sinatra'
+gem 'thin'
 
 group :test, :development do
-  gem 'rspec'
   gem 'capybara'
-  gem 'rack-test'
   gem 'pry'
+  gem 'rack-test'
+  gem 'rspec'
 end
